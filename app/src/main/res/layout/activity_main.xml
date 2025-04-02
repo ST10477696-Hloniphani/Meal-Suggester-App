@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+1. Coolors. Trending Color Palettes.
+[Online] Available at: https://coolors.co/palettes/trending
+[Accessed 19 March 2025]
+
+2. Fone Walls. Food Phone Home Screen Black 4k iPad Wallpaper.
+[Online] Available at: https://www.fonewalls.com/amoled-wallpapers/food-phone-home-screen-black-4k-phone-wallpaper/
+[Accessed 19 March 2025]
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="277dp"
+        android:layout_height="47dp"
+        android:text="Meal Suggestions"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <TextView
+        android:id="@+id/txtPageInfo"
+        android:layout_width="238dp"
+        android:layout_height="51dp"
+        android:text="What time of the day is it currently
+        (Morning, Mid-Morning, Afternoon, Mid-Afternoon, Dinner)."
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <TextView
+        android:id="@+id/txtMealResults"
+        android:layout_width="292dp"
+        android:layout_height="157dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <Button
+        android:id="@+id/btnGiveMeal"
+        android:layout_width="249dp"
+        android:layout_height="76dp"
+        android:backgroundTint="@color/Brown"
+        android:text="Find Meal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="249dp"
+        android:layout_height="76dp"
+        android:backgroundTint="@color/Brown"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.864" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="249dp"
+        android:layout_height="76dp"
+        android:backgroundTint="@color/Brown"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.748" />
+
+    <EditText
+        android:id="@+id/edtTimeOfDay"
+        android:layout_width="293dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Enter Time Of Day"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        android:text=""
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
